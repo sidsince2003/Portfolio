@@ -25,7 +25,7 @@ const TechnologyIcon = ({ href, icon: Icon, color, duration }) => (
       variants={iconVariants(duration)}
       initial="initial"
       animate="animate"
-      className="rounded-2xl border-4 border-neutral-800 p-4"
+      className="rounded-2xl border-4 border-gray-400 p-4"
     >
       <Icon className={`text-7xl ${color}`} />
     </motion.div>
@@ -43,7 +43,7 @@ const Technologies = () => {
   ];
 
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div id='Skills' className="border-b border-neutral-800 pb-24">
       <h1 className="my-20 text-center text-4xl">Technologies</h1>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}

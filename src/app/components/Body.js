@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowRight, Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, ChevronDown, Instagram } from "lucide-react";
 import ParticlesBackground from "./ParticlesBackground";
 
 const Body = () => {
@@ -29,23 +29,23 @@ const Body = () => {
               </p>
 
               <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-                With over 5 years of experience in building modern web
-                applications, I specialize in creating scalable and user-friendly
-                solutions.
+              With extensive hands-on experience in developing modern web applications, I specialize in crafting scalable, efficient, and user-friendly solutions.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16 animate-slide-up delay-200">
-              <a
-                href="#contact"
-                className="group flex items-center gap-2 bg-blue-500 backdrop-blur-md text-white px-8 py-4 rounded-full hover:bg-blue-600 transition-all"
-              >
-                Get in touch
-                <ArrowRight
-                  className="group-hover:translate-x-1 transition-transform"
-                  size={20}
-                />
-              </a>
+            <a
+            href="https://drive.google.com/uc?id=1Xno_57JjyxP-mFQ0c6Rf2M_k_lHcbyZC&export=download"
+            download="Siddharth_Sharma_Resume.pdf"
+            className="group flex items-center gap-2 bg-blue-500 backdrop-blur-md text-white px-8 py-4 rounded-full hover:bg-blue-600 transition-all"
+            >
+              My Resume
+              <ArrowRight
+                className="group-hover:translate-x-1 transition-transform"
+                size={20}
+              />
+            </a>
+
 
               <div className="flex items-center gap-6">
                 <a
@@ -65,10 +65,10 @@ const Body = () => {
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="mailto:contact@example.com"
+                  href="https://www.instagram.com/sid_since2003/"
                   className="p-3 rounded-full hover:bg-red-100 hover:text-red-600 transition-colors backdrop-blur-md"
                 >
-                  <Mail size={24} />
+                  <Instagram size={24} />
                 </a>
               </div>
             </div>

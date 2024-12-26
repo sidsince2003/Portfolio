@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <section className="pt-10 overflow-hidden bg-white dark:bg-gray-900 md:pt-0 sm:pt-16 2xl:pt-16">
+      <section id="About" className="pt-10 overflow-hidden bg-white dark:bg-gray-900 md:pt-0 sm:pt-16 2xl:pt-16">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center grid-cols-1 md:grid-cols-2">
             <div>
@@ -11,7 +11,7 @@ const About = () => {
                 <br className="block sm:hidden" />About Me
               </h2>
               <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-900 dark:text-gray-300 md:mt-8">
-                I am Siddharth Sharma, a 4th-year AIML student with a strong foundation in full-stack development and hands-on experience in HTML, CSS, Tailwind CSS, React, Django, Flask, MongoDB, and more. Passionate about bridging technology and real-world applications, I am expanding my expertise in AI and machine learning to develop innovative solutions.
+                I am Siddharth Sharma, a Final-year AIML student with a strong foundation in full-stack development and hands-on experience in HTML, CSS, Tailwind CSS, React, Django, Flask, MongoDB, and more. Passionate about bridging technology and real-world applications, I am expanding my expertise in AI and machine learning to develop innovative solutions.
               </p>
 
               <p className="mt-4 text-xl text-gray-800 dark:text-gray-300 md:mt-8">
@@ -22,7 +22,7 @@ const About = () => {
                 <br className="block sm:hidden" />
                 Ask me on{" "}
                 <a
-                  href="#"
+                  href="https://x.com/sid_since2003"
                   title=""
                   className="transition-all duration-200 text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-300 hover:underline"
                 >
@@ -33,9 +33,9 @@ const About = () => {
 
             <div className="relative">
               <img
-                className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2 dark:opacity-50"
+                className="absolute inset-x-0 bottom-0 -mb-30 -translate-x-1/2 left-1/2 dark:opacity-50"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg"
-                alt=""
+                alt="shape"
               />
 
               <img
