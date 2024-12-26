@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { createClient } from 'next-sanity';
 import imageUrlBuilder from '@sanity/image-url';
 import { CalendarDays } from 'lucide-react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const client = createClient({
   projectId: 'r3s7jco8',
@@ -19,31 +19,29 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-// Format date with consistent formatting
 const formatDate = (dateString) => {
   return new Date(dateString).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-    timeZone: 'UTC'  // Use UTC to ensure consistent dates
+    timeZone: 'UTC'
   });
 };
 
 const Blogs = () => {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [mounted, setMounted] = useState(false);
+  const [error, setError] = useState(null);
+  const router = useRouter();
 
   useEffect(() => {
-    setMounted(true);
-    
     const fetchPosts = async () => {
       try {
         const query = `
           *[_type == "blog"] | order(publishedAt desc) {
             _id,
             title,
-            slug,
+            "slug": slug.current,  // Get slug.current directly
             mainImage,
             publishedAt,
             excerpt,
@@ -55,6 +53,7 @@ const Blogs = () => {
         setPosts(fetchedPosts);
       } catch (error) {
         console.error('Error fetching posts:', error);
+        setError(error.message);
       } finally {
         setIsLoading(false);
       }
@@ -63,12 +62,23 @@ const Blogs = () => {
     fetchPosts();
   }, []);
 
-  if (!mounted) return null;
+  const handleReadMore = (slug) => {
+    // Force page refresh to ensure clean state
+    window.location.href = `/blog/${slug}`;
+  };
+
+  if (error) {
+    return (
+      <div className="min-h-screen py-20 px-4 md:px-6 flex items-center justify-center">
+        <div className="text-xl text-red-600">Error: {error}</div>
+      </div>
+    );
+  }
 
   if (isLoading) {
     return (
       <div className="min-h-screen py-20 px-4 md:px-6 flex items-center justify-center">
-        <div className="text-xl">Loading...</div>
+        <div className="text-xl">Loading blog posts...</div>
       </div>
     );
   }
@@ -134,13 +144,13 @@ const Blogs = () => {
                 </p>
               )}
 
-              <Link 
-                href={`/blog/${post.slug.current}`}
+              <button
+                onClick={() => handleReadMore(post.slug)}
                 className="text-blue-600 hover:text-blue-700 dark:hover:text-blue-400 font-medium flex items-center gap-2"
               >
                 Read more
                 <span aria-hidden="true">→</span>
-              </Link>
+              </button>
             </div>
           </article>
         ))}

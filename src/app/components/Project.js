@@ -12,7 +12,7 @@ const Project = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project Card 1 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="h-48 bg-gray-200">
+              <div className="h-48 bg-gray-500">
                 <video
                   autoPlay
                   loop
@@ -24,7 +24,7 @@ const Project = () => {
                 </video>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">TrueDoc-ID</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">TrueDoc-ID</h3>
                 <p className="text-gray-600 mb-4">
                 TrueDoc ID is a cutting-edge document verification system that leverages AI and blockchain technology to ensure secure, efficient, and tamper-proof verification. Featuring NFC integration for seamless validation, TrueDoc ID offers multi-language support and a unified platform for streamlining the document verification process. Ideal for organizations and individuals, it reduces manual effort and enhances data integrity.
                 </p>
@@ -60,7 +60,7 @@ const Project = () => {
                 </video>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Mock.AI</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Mock.AI</h3>
                 <p className="text-gray-600 mb-4">
                 Mock.ai is an AI-powered platform designed to help users prepare for job interviews through tailored mock interview experiences. By registering with details about the desired job role, tech stack, and experience level, users engage in realistic, AI-driven mock interviews. The platform records responses via webcam and microphone, providing detailed feedback and ratings based on performance. This allows users to improve their interview skills and gain confidence before the real thing, making it an essential tool for job seekers in various fields.
                 </p>
@@ -95,7 +95,7 @@ const Project = () => {
                 </video>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Project Name</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Project Name</h3>
                 <p className="text-gray-600 mb-4">
                   Brief description of the project and the technologies used.
                 </p>
