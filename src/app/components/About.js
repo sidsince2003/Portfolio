@@ -11,7 +11,7 @@ const About = () => {
                 <br className="block sm:hidden" />About Me
               </h2>
               <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-900 dark:text-gray-300 md:mt-8">
-                I am Siddharth Sharma, a Final-year AIML student with a strong foundation in full-stack development and hands-on experience in HTML, CSS, Tailwind CSS, React, Django, Flask, MongoDB, and more. Passionate about bridging technology and real-world applications, I am expanding my expertise in AI and machine learning to develop innovative solutions.
+                I am a Final-year AIML student with a strong foundation in full-stack development and hands-on experience in HTML, CSS, Tailwind CSS, React, Django, Flask, MongoDB, and more. Passionate about bridging technology and real-world applications, I am expanding my expertise in AI and machine learning to develop innovative solutions.
               </p>
 
               <p className="mt-4 text-xl text-gray-800 dark:text-gray-300 md:mt-8">

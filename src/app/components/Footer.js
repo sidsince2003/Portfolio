@@ -15,13 +15,13 @@ const Footer = () => {
               opportunities to be part of your visions.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a
-                href="mailto:siddharth28setu.com"
-                className="flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all"
-              >
-                <Mail size={20} />
-                Send me an email
-              </a>
+            <a
+            href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSHvbJLHqmZZbZSjdldTKcDpsKptzTwKDlGlTHzBFngLWsmtVRBBHCrCphZVlQBLPqDNlMXx"
+            className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all cursor-pointer"
+            >
+            <Mail size={20} />
+            Send me an email
+           </a>
               <a
                 href="https://www.linkedin.com/in/sidsince2003/"
                 target="_blank"

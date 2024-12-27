@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Technologies from "./components/Technologies";
 import { ClientParticles, ClientBlogs } from "./components/ClientComponents";
 
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-background/80 dark:bg-gray-900 backdrop-blur-sm text-gray-900 dark:text-gray-100">
@@ -13,8 +14,8 @@ export default function Home() {
       <ClientParticles />
       <Body />
       <About />
-      <Technologies />
       <Project />
+      <Technologies />
       <ClientBlogs />
       <Footer />
     </main>
